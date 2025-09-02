@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+<style type="text/css">
+*{
+    text-decoration: none;
+}
+.navbar{
+    background: #Ffb0b5; font-family: calibri; padding-right: 15px;padding-left: 15px;
+}
+.navbar{
+    background: #FFB0B5; font-family: calibri; pading-right: 15px;padding-left: 15px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-betweeen;
+}
+.logo a{
+    font-size: 40px; font-weight: 600; color: white; font-family: 'Brush Script MT', cursive;
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+button{
+    background-color: #FB6F92; margin-left: 10px; border-radius: 10px; padding: 10px; width:
+     90px;
+}
+
+button a{
+    color: white; font-weight: bold; font-size: 15px;
+}
+button{
+    color: white; font-weight: bold; font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition:  0.3s ease;
+}
+.navbar ul li a :before{
+content:'';
+position: absolute;
+width:0;
+height:2px;
+left:0;
+bottom:-5px;
+background-color: #FF007F;
+transition:  0.3s ease;
+}
+.navbar ul li a:hover{
+    color:#FF007F;
+}
+.navbar-search{
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.navbar-search input{
+    padding:7px 15px;
+    border-radius: 25px;
+    border:none;
+    outline:none;
+    font-size: 17px;
+    margin-right: 10px;
+    width: 150px;
+    background-color: #fff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.navbar-search input:focus{
+width:200px;
+background-color: #FB6F92;
+}
+.navbar-search button{
+    font-size: 17px;
+    padding:7px 15px;
+    background-color: #FF007F;
+    color:#fff;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbar-search button:hover{
+    background-color: #a3006b;
+}
+body{
+background-color: #F5dce0;
+width: 100%;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    background: #FFC6D3;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.wrapper h1{
+    font-size: 38px;
+    text-align: center;
+}
+
+.wrapper h2{
+font-size: 25px;
+text-align: justify;
+}
+
+.wrapper .input-box{
+    position: relative;
+width: 400px;
+height: 50px;
+margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .forgot{
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 30px;
+}
+
+.forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.forgot a {
+    font-weight: 600;
+    color:#FF007F;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+    text-align: center;
+    color: #a3006b;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #FB6F92;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #FF007F;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+text-decoration: underline;
+color: #a3006b;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+    <nav class="navbar">
+       <div class="navdiv">
+<div class="logo"><a href="#">SweetEscape</a> </div>
+<ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="About Us.html">About Us</a></li>
+    <li><a href="Contact.html">Contact</li>
+    <button><a href="Sign In.html">Sign In</a></li>
+    <button><a href="Sign Up.html">Sign Up</a></li>
+</ul>
+</nav>
+
+<div style="position: relative; bottom: 50px; left: 800px;"><div class="navbar-search">
+   <input type="text" placeholder="Search. . .">
+     <button>Search</button></div>
+</div>
+       </div> 
+    </nav>
+<section>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+     rel='stylesheet'>
+    <div class="wrapper">
+        <form action="">
+            <h1>Welcome back!</h1>
+            <h2>Sign In</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Username"
+                required>
+                <i class='bx bxs-user'></i>
+            </div>
+             <div class="input-box">
+                <input type="password" placeholder="Password"
+                required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <br>
+            <div class="forgot">
+                
+                <a href="btn">Forgot password?</a>
+            </div>
+            <br>
+            <button type="submit" class="btn">Sign In</button>
+
+            <div class="register-link">
+                <p>Already have an account? <a href="file:///C:/Users/adi/Documents/Berlyana%20Avriliyanti%20Coding/.vscode/Sign%20Up.html">Sign Up</a></p>
+
+            </div>
+        </form>
+    </div>
+</section>
+    </nav>
+</body>
+</html>

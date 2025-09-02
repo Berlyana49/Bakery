@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+<style type="text/css">
+*{
+    text-decoration: none;
+}
+.navbar{
+    background: #Ffb0b5; font-family: calibri; padding-right: 15px;padding-left: 15px;
+}
+.navbar{
+    background: #FFB0B5; font-family: calibri; pading-right: 15px;padding-left: 15px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-betweeen;
+}
+.logo a{
+    font-size: 40px; font-weight: 600; color: white; font-family: 'Brush Script MT', cursive;
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+button{
+    background-color: #FB6F92; margin-left: 10px; border-radius: 10px; padding: 10px; width:
+     90px;
+}
+
+button a{
+    color: white; font-weight: bold; font-size: 15px;
+}
+button{
+    color: white; font-weight: bold; font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition:  0.3s ease;
+}
+.navbar ul li a :before{
+content:'';
+position: absolute;
+width:0;
+height:2px;
+left:0;
+bottom:-5px;
+background-color: #FF007F;
+transition:  0.3s ease;
+}
+.navbar ul li a:hover{
+    color:#FF007F;
+}
+.navbar-search{
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.navbar-search input{
+    padding:7px 15px;
+    border-radius: 25px;
+    border:none;
+    outline:none;
+    font-size: 17px;
+    margin-right: 10px;
+    width: 150px;
+    background-color: #fff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.navbar-search input:focus{
+width:200px;
+background-color: #FB6F92;
+}
+.navbar-search button{
+    font-size: 17px;
+    padding:7px 15px;
+    background-color: #FF007F;
+    color:#fff;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbar-search button:hover{
+    background-color: #a3006b;
+}
+body{
+background-color: #F5dce0;
+width: 100%;
+}
+
+.wrapper{
+   position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+    background-color: #FB6F92;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.wrapper h1{
+font-family: 'Garamond';
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    
+    
+}
+
+div.mycontainer{
+    width: 100%;
+    overflow:auto;
+    background-color: #FFC6CA;
+    padding-top: 5px;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Garamond';
+    color: #fff;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+div.mycontainer div{
+    width: 50%;
+    float: left;
+}
+
+div.container{
+    width: 100%;
+    overflow: auto;
+    background-color: #FB6F92;
+}
+
+div.container div{
+    width: 50%;
+    float: right;
+}
+
+h3{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Garamond';
+}
+
+div.contain{
+    width: 100%;
+    overflow:auto;
+    background-color: #FFC6CA;
+    padding-top: 5px;
+}
+
+div.contain div{
+    width: 50%;
+    float: left;
+}
+
+h4{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Garamond';
+}
+
+
+</style>
+</head>
+<body>
+    <nav>
+    <nav class="navbar">
+       <div class="navdiv">
+<div class="logo"><a href="#">SweetEscape</a></div>
+<ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="About Us.html">About Us</a></li>
+    <li><a href="Contact.html">Contact</li>
+    <button><a href="Sign In.html">Sign In</a></li>
+    <button><a href="Sign Up.html">Sign Up</a></li>
+</ul>
+</nav>
+
+<div style="position: relative; bottom: 50px; left: 800px;"><div class="navbar-search">
+   <input type="text" placeholder="Search. . .">
+     <button>Search</button></div>
+</div>
+       </div> 
+    </nav>
+    <section>
+<div class="wrapper">
+    <h1>About Us</h1>
+</div>    
+
+<div class="mycontainer">
+    <div style>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/fb/ca/e5/the-mandarin-cake-shop.jpg?w=900&h=500&s=1" width="100%" height="400">
+    </div>
+
+    <div style>
+        <h2>Our Story</h2>
+        <p>Starting from a small kitchen at home, SweetEscape was born out of our love for delicious homemade cakes full of love.</p>
+        <p>Since 500 AD, we have continued to grow by offering a wide range of cakes, breads, and sweet treats</p>
+        <p> made from quality ingredients and selected recipes.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div style>
+        <img src="https://pelatihanrestoran.com/wp-content/uploads/2023/05/Job_Commis-1-Pastry-092b2ae9.png" 
+        width="100%" height="400">
+    </div>
+    
+    <div style>
+        <h3>Every Taste Tells a Story</h3>
+        <p>Welcome to SweetEscape, where the art of baking meets dedication</p> 
+        <p>to quality and elegance of flavor. Founded on a deep love for classic and modern pastries,</p> 
+        <p>our store has grown from an artisan kitchen to a premier destination for cake enthusiasts</p> 
+        <p>who appreciate detail, authenticity, and uncompromising deliciousness.</p>
+        <p>We believe that cakes are not just desserts they are an expression of celebration, love, and attention</p>
+    </div>
+</div>
+
+
+
+<div class="contain">
+<div style>
+    <img src="https://fieldnotes.com.sg/cdn/shop/articles/Top_4_Reasons_Why_Eating_Cake_Is_Good_For_You.jpg?v=1703643036&width=1125" 
+        width="100%" height="400">
+</div>
+
+    <div style>
+    <h4>Luxury in Every Bite</h4>
+    <p>Every product we create is crafted with love and care by our skilled pastry chefs,</p>
+    <p>using only the highest-quality ingredients: rich premium butter, decadent Belgian chocolate,</p>
+    <p> authentic vanilla, and the freshest fruits we can find. We don't believe in shortcuts we know that </p>
+    <p> true excellence requires time and dedication</p>
+</div>
+</div>
+
+</section>
+</body>
+</html>
