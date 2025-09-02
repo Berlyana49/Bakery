@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+<style type="text/css">
+*{
+    text-decoration: none;
+}
+.navbar{
+    background: #Ffb0b5; font-family: calibri; padding-right: 15px;padding-left: 15px;
+}
+.navbar{
+    background: #FFB0B5; font-family: calibri; pading-right: 15px;padding-left: 15px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-betweeen;
+}
+.logo a{
+    font-size: 40px; font-weight: 600; color: white; font-family: 'Brush Script MT', cursive;
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+button{
+    background-color: #FB6F92; margin-left: 10px; border-radius: 10px; padding: 10px; width:
+     90px;
+}
+
+button a{
+    color: white; font-weight: bold; font-size: 15px;
+}
+button{
+    color: white; font-weight: bold; font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition:  0.3s ease;
+}
+.navbar ul li a :before{
+content:'';
+position: absolute;
+width:0;
+height:2px;
+left:0;
+bottom:-5px;
+background-color: #FF007F;
+transition:  0.3s ease;
+}
+.navbar ul li a:hover{
+    color:#FF007F;
+}
+.navbar-search{
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.navbar-search input{
+    padding:7px 15px;
+    border-radius: 25px;
+    border:none;
+    outline:none;
+    font-size: 17px;
+    margin-right: 10px;
+    width: 150px;
+    background-color: #fff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.navbar-search input:focus{
+width:200px;
+background-color: #FB6F92;
+}
+.navbar-search button{
+    font-size: 17px;
+    padding:7px 15px;
+    background-color: #FF007F;
+    color:#fff;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbar-search button:hover{
+    background-color: #a3006b;
+}
+body{
+background-color: #F5dce0;
+width: 100%;
+}
+
+h2{
+    font-size: 40px;font-family: Garamond, serif; padding-bottom: 30px; padding-left: 300px; text-align: justify;
+}
+
+p{
+    font-size: 19px;font-family: Times New Roman; padding-bottom: 100px; padding-left: 100px; margin: auto;
+}
+
+.container1{ 
+    
+    width: 900px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 15px solid #FB6F92;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px  rgba(30, 30, 200, 0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+image{
+    width: 100%;
+}
+@keyframes slide{
+    0%{
+       transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+.container2{
+    overflow: hidden; /* Untuk mengatasi masalah float */ 
+
+}
+
+.image{
+    float: right; /* Atau float: right; untuk rata kanan */
+    margin-right: 10%; /* Jarak antara gambar dan teks */
+    padding-bottom: 100px; padding-left: 20px; 
+    margin: 10px 0;
+    transform: translateX(-30%);
+}
+
+h2{
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 10px;
+   font-size: 50px;
+}
+
+
+</style>
+</head>
+<body>
+    <nav>
+    <nav class="navbar">
+       <div class="navdiv">
+<div class="logo"><a href="SweetEscape.html">SweetEscape</a> </div>
+<ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="About Us.html">About Us</a></li>
+    <li><a href="Contact.html">Contact</li>
+    <button><a href="Sign In.html">Sign In</a></li>
+    <button><a href="Sign Up.html">Sign Up</a></li>
+</ul>
+</nav>
+
+<div style="position: relative; bottom: 50px; left: 800px;"><div class="navbar-search">
+   <input type="text" placeholder="Search. . .">
+     <button>Search</button></div>
+</div>
+       </div> 
+    </nav>
+
+    <div class="container1">
+        <div class="wrapper">
+             <div style="display: flex; justify-content: center;">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/24/34/c6/mandarin-cake-shop-bakery.jpg?w=900&h=500&s=1" 
+     width="900" height="420">
+     <img src="https://smartpluspro.com/app/repository/upload/image/news/Perbedaan-Puff-Pastry-Danish-Pastry-dan-Croissant-Pastry-04.jpg"
+     width="900" height="420">
+     <img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/french-macarons-bce3c2b5.jpg"
+     width="900" height="420">
+      <img src="https://www.tokyo.grandnikko.com/eng/restaurant/bakery-pastry/images/img_title-sp.jpg"
+     width="900" height="420">
+      <img src="https://media.bluediamond.com/uploads/2023/01/24174619/Breeze_Birthday_Cake_Pops_2_-scaled.jpg"
+     width="900" height="420">
+     </div>
+        </div>
+
+    </div>
+
+    <br> 
+    
+<section2>
+    <div style="background-color:#FB6F92;color: white; width: 100%; padding: 2px; border-radius: 10px;">
+        <h2>One Bite, A World of Sweetness</h2> 
+        <hr> 
+        <br>
+    <div class="container2">
+      <div style="margin: 0auto;" >
+    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/8/7/bf16a175-cedc-45fa-b1c3-2d0266d66308.jpg" 
+     alt="Gambar" title="Egg Tart" class="image" width="150" height="150">
+     <img src="https://assets.bonappetit.com/photos/59b807037f7c9a1ef926e5f6/1:1/w_2560%2Cc_limit/portuguese-egg-custard-tarts.jpg" 
+     alt="Gambar" class="image" width="150" height="150">
+     <img src="https://richcreme.com/wp-content/uploads/2022/11/20.RCWC-pastry-puf.jpg" 
+     alt="Gambar" class="image"  width="150" height="150"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRilI15uD9b2mqCtonY0uw7u9xH2-RY-xNFw&s" 
+     alt="Gambar" class="image"  width="150" height="150">
+     </div>  
+     
+     <p style= "margin-left: 50px; font-size: 20px;"> Indulge in a world of sweet delights,<br> 
+    <br>carefully crafted with love and the finest ingredients. <br> <br> Our collection includes birthday cakes, trendy tarts, 
+    artisanal breads,<br> <br> decadent pastries, and homemade cookies available to satisfy your <br> <br>
+    cravings and those of your dear ones.</p>
+     
+     </div>
+</div> 
+</section2>
+</body>
+</html>
